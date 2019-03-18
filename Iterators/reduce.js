@@ -30,8 +30,8 @@ var developer = [
     }
   ];
 
-  var totalYears = pilots.reduce(function (accumulator, developer) {
-    return accumulator + developer.years;
+  var totalYears = developer.reduce(function (accumulator, dev) {
+    return accumulator + dev.years;
   }, 0); // intial value can be set , but default is 0;
 
   console.log(totalYears);
