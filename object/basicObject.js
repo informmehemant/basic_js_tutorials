@@ -1,5 +1,5 @@
 // basic object discription
-// json way
+// Object initializer
 var person = {
     name: 'Rahul',
     email: 'rahul123@gmail.com',
@@ -22,3 +22,28 @@ var person1 = new Object();
 person1.name = 'Shivam saxena';
 
 console.log(person1);
+
+
+// constructor function
+
+function car(name, company, color) {
+  this.name = name;
+  this.company = company;
+  this.color = color;
+}
+
+var modelCar = new car('BMW-s20', 'BMW', 'royal blue');
+console.log(modelCar.name);
+
+//  Object.create() 
+var Animal = {
+    name: '',
+    display: function() {
+        console.log(this.name);
+    }
+};
+var dog = Object.create(Animal);
+dog.name = 'broonu';
+dog.display()
+
+
