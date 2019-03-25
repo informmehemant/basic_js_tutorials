@@ -9,3 +9,9 @@ var obj = {
 
 obj.b(); // prints undefined, Window {...} (or the global object)
 obj.c(); // prints 10, Object {...}
+
+function add() {
+    return 2 + 3;
+}
+ 
+var add1 = () => {2+1}
